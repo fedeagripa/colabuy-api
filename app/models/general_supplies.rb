@@ -1,0 +1,2 @@
+class GeneralSupply < DonationCenter
+end
