@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1, defaults: { format: :json } do
       get :status, to: 'api#status'
+      resources :donation_centers
 
       devise_scope :user do
         resource :user, only: %i[update show] do
