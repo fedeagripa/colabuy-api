@@ -1,6 +1,5 @@
 describe 'GET api/v1/donation_centers', type: :request do
-  subject { get '/api/v1/donation_centers', headers: auth_headers, as: :json }
-  let(:user) { create(:user) }
+  subject { get '/api/v1/donation_centers', as: :json }
   let!(:pharmacy) { create(:donation_center, :pharmacy) }
   let!(:general) { create(:donation_center, :general) }
 
